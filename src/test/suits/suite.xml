@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="3" verbose="1" name="Automation_Sauce_Demo"
+       annotations="JDK" parallel="tests">
+
+    <test name="Success Test Suite">
+        <classes>
+            <class name="automation.test.SuccessfulLoginTest"/>
+        </classes>
+    </test>
+    <test name="AddItem Test">
+        <classes>
+            <class name="automation.test.AddItemsToCartTest"/>
+        </classes>
+    </test>
+    <test name="RemoveItem Test">
+        <classes>
+            <class name="automation.test.RemoveItemsFromCartTest"/>
+        </classes>
+    </test>
+</suite>
