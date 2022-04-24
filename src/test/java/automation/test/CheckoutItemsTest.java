@@ -32,12 +32,11 @@ public class CheckoutItemsTest extends TestUtil {
 
             WebElement shoppingCartLink = driver.findElement(By.className("shopping_cart_link"));
             shoppingCartLink.click();
-            Thread.sleep(3000);
+
 
 
             WebElement btnBtnActionBtnMediumCheckoutButton = driver.findElement(By.id("checkout"));
             btnBtnActionBtnMediumCheckoutButton.click();
-            Thread.sleep(3000);
 
             WebElement informationText = driver.findElement(By.className("title"));
             Assert.assertTrue(informationText.isDisplayed(), "This shall be display after successful checkout");
@@ -48,7 +47,7 @@ public class CheckoutItemsTest extends TestUtil {
 
             CompletePage completePage = overviewPage.tryToCompletePage();
 
-            Thread.sleep(3000);
+
 
             WebElement userBackHomeButton = driver.findElement(By.id("back-to-products"));
             Assert.assertTrue(userBackHomeButton.isDisplayed(),"This shall be display after successful finish");
